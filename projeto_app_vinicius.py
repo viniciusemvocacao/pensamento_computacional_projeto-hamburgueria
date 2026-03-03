@@ -37,18 +37,26 @@ while True:
         print('\n Finalizando pedido...\n')
         break
 
-    delivery =print('\nComplete as informações:')
 
     if escolha_menu == '2' :
         
-       #entrega = input('\nDigite seu endereço:\n')
-       #Casa_ou_apartamento = print('\n 1. Casa\n')
-       print('1 Casa')
-       print('2 Apartamento')
+       entrega = input('\nDigite seu endereço:\n')
+       print('1. Casa')
+       print('2. Apartamento')       
+       Casa_ou_apartamento = input('\nCasa ou Ap:')
 
-    if delivery == 'Casa' :
+    if Casa_ou_apartamento == '1': input('Numero da residencia:')
 
-     input('\nDigite seu endereço')
+    if Casa_ou_apartamento == '2' : input('Numero do apartamento:')
+    input ('\nBloco do condominio:\n')
+
+
+    if escolha_menu == '0' :
+
+        print('\nEncerrando atendimento\n')
+        break
+        
+
 
         
 
